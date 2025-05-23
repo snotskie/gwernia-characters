@@ -943,7 +943,7 @@ const DICE = (function() {
         if (soundVolume === 0) return;
         const audio = document.createElement('audio');
         outerContainer.appendChild(audio);
-        audio.src = 'assets/nc93322.mp3'; //todo: make this configurable
+        audio.src = '/gwernia-characters/assets/nc93322.mp3'; //todo: make this configurable
         audio.volume = soundVolume;
         audio.play();
         audio.onended = () => {
