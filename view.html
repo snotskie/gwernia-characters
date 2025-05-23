@@ -1,0 +1,248 @@
+<div class="row" id="stats-row">
+  {{@foreach(it.stats) => i, stat}}
+    <div class="stat">
+      <div class="emoji">
+        <a href="javascript:queueRoll('{{stat.value}}')">{{stat.emoji}}</a>
+      </div>
+      <div>
+        <a href="javascript:queueRoll('{{stat.value}}')">{{stat.name}}</a>
+      </div>
+      <div class="value">
+        <a href="javascript:queueRoll('{{stat.value}}')">{{stat.value}}</a>
+      </div>
+    </div>
+  {{/foreach}}
+</div>
+{{@if(it.name)}}
+  <div class="row" id="name-row">
+    <h1>
+      {{it.name}}
+    </h1>
+    {{@if(it.subname)}}
+      <p>
+        {{it.subname}}
+      </p>
+    {{/if}}
+  </div>
+{{/if}}
+{{@foreach(it.effects) => i, effect}}
+  <div class="row" id="effects-row">
+    <h1>
+      {{effect.name}}
+    </h1>
+    <p>
+      {{effect.effect}}
+    </p>
+  </div>
+{{/foreach}}
+{{@if(it.aptitudes)}}
+  <div class="row" id="apts-row">
+    <h1>
+      🔰 Apts &amp; Specs
+    </h1>
+    <ul>
+      {{@foreach(it.aptitudes) => i, apt}}
+        <li>
+          <strong>{{apt.name}}</strong>
+          {{@if(apt.effect)}}
+            <br />
+            {{apt.effect}}
+          {{/if}}
+        </li>
+      {{/foreach}}
+    </ul>
+  </div>
+{{/if}}
+{{@if(it.items)}}
+  <div class="row" id="items-row">
+    <h1>
+      💰 Items
+    </h1>
+    <ul>
+      {{@foreach(it.items) => i, item}}
+        <li>
+          <strong>{{item.name}}</strong>
+          {{@if(item.effect)}}
+            <br>
+            {{item.effect}}
+          {{/if}}
+        </li>
+      {{/foreach}}
+    </ul>
+  </div>
+{{/if}}
+<div class="row" id="checks-row">
+  <h1>
+    🎲 Checks
+  </h1>
+  <p>
+    Roll 2 or lower: Fail.
+  </p>
+  <p>
+    Roll 3 or 4: If Easy or Apt, round up to 5. Otherwise, fail.
+  </p>
+  <p>
+    Roll 5: Minor Success (comes with a bust).
+  </p>
+  <p>
+    Roll 6 or 7: Some effects round up to 8. Otherwise, Minor Success.
+  </p>
+  <p>
+    Roll 8, 9, or 10: Medium Success.
+  </p>
+  <p>
+    Roll 11 to 19: Major Success (comes with a boon).
+  </p>
+  <p>
+    Roll 20+: Maximum Success (exceptional boon).
+  </p>
+</div>
+<div class="row" id="difficulty-row">
+  <h1>
+    🪨 Difficulty
+  </h1>
+  <p>
+    Hard: Roll twice, need to succeed both.
+  </p>
+  <p>
+    Complex: At least three rolls, with different Stats and/or characters per roll, fail at most once.
+  </p>
+</div>
+<div class="row" id="helping-row">
+  <h1>
+    🤝 Helping
+  </h1>
+  <p>
+    Once per roll you may Help another character by spending ①.
+    They add half the value of that Blessing to the roll, rounded down, to a minimum of 1.
+    They also gain an additional bust.
+    You cannot Help if you are engaged in another action or if it would be unreasonable.
+  </p>
+</div>
+<div class="row" id="attacks-row">
+  <h1>
+    🔄 Attacks
+  </h1>
+  <p>
+    Only Attacker rolls. If Defender has a relevant Apt, Check is one rank harder. If the Apt is Spec'd, it's another rank harder.
+  </p>
+</div>
+<div class="row" id="ethics-row">
+  <h1>
+    ⚔️ Vice &amp; Virtue
+  </h1>
+  <p>
+    Gain Blessings for completing important story milestones.
+  </p>
+  <p>
+    On your first Major Success each session, gain a Blessing. Each other player whose character witnessed or heard about that success also gains a Blessing.
+  </p>
+</div>
+<div class="row" id="schools-row">
+  <h1>
+    📜 Schools
+  </h1>
+  <ul>
+    <li>
+      <strong>Elemental</strong><br />
+      🍄 Herbs, seeds, spices, clays, boughs, oils, gems, awareness.
+      🔵 Make flower bloom, light a campfire.
+      🟢 Control wind, cure fatigue, throw sound.
+      🟠 Cure poison, throw fire, call rain, stealth.
+      🟣 Control and intensify the elements, control storms.
+      ⚫ Summon and control elementals.
+      ⚪ Force evolution.
+    </li>
+    <li>
+      <strong>Naming</strong><br />
+      🍄 Inks, parchment, wax, silk, thread, staffs, oils, gems, precision.
+      🔵 Encrypt information, clean.
+      🟢 Understand magical language, repair.
+      🟠 Boost and dampen physical and mental capabilities.
+      🟣 Mind read, charm, suggest, transmute.
+      ⚫ Teleport, divine fate, scry, speak with dragons.
+      ⚪ Banish.
+    </li>
+    <li>
+      <strong>Star</strong><br />
+      🍄 Salts, dusts, powders, tattoos, wands, oils, gems, movement.
+      🔵 Navigate, light paths.
+      🟢 Create illusion, send a cryptic message.
+      🟠 Adjust gravity or weight, create pure light.
+      🟣 Heal wounds, remove curses, enchant, shapeshift.
+      ⚫ Adjust luck or fate, smite.
+      ⚪ Time travel.
+    </li>
+    <li>
+      <strong>Necromancy</strong><br />
+      🍄 Bones, blood, viscera, oils, gems, pacts.
+      🔵 Create acid, wither plants.
+      🟢 Roughen terrain, hear ethereal whispers.
+      🟠 Create darkness, infect, exhaust, speak with dead.
+      🟣 Drain energy, puppet undead, curse.
+      ⚫ Summon undead, skinwalk, steal capabilities.
+      ⚪ Cheat death.
+    </li>
+    <li>
+      <strong>Mechanics</strong><br />
+      🍄 Tools, materials, workspace.
+      🔵 Create mundane item.
+      🟢 Create mundane item that helps overcome an obstacle, identify trap.
+      🟠 Create high-quality item that rounds 7 up to 8, pick lock, disable trap, identify magical device.
+      🟣 Create powered item that rounds 6 or 7 up to 8, disable magical device.
+      ⚫ Create unique item that provides unique effects, change function of magical device.
+      ⚪ Forge legendary artifact.
+    </li>
+    <li>
+      <strong>Alchemy</strong><br />
+      🍄 Metals, powders, oils, salts, acids, bases, instruments, heat, formulae.
+      🔵 Identify substance.
+      🟢 Create explosive potions, identify magical properties.
+      🟠 Create potions that treat or cause mundane conditions, purify substance.
+      🟣 Create potions that treat or cause magical conditions, heighten magical properties, transmute substance.
+      ⚫ Create homunculi.
+      ⚪ Observe Truth.
+    </li>
+  </ul>
+  <p>
+    <em>Key:</em> 🍄 Reagents. 🔵 Easy effects. 🟢 Normal effects. 🟠 Hard effects. 🟣 Complex effects. ⚫ Extra complex effects. ⚪ Quest-level effects.
+  </p>
+  <p>
+    Increase the difficulty if you are pushing the area, duration, or nature of the effect further than normal; if the effect requires a material cost you cannot pay; if you are untrained in the effect or it is outside your school of training; if the effect requires forbidden knowledge; or if the environment is not conducive to such effects.
+  </p>
+  <p>
+    Reagents are required to craft items and cast spells. You may expend high quality reagents and spend a Blessing to grant yourself Help on a related roll.
+  </p>
+</div>
+<!-- <div class="row">
+  <h1>
+    Monstrous Endeavors
+  </h1>
+  <p>
+    Your goal is to move your opponents to 0 or yourself to 30. Their goal is to give you 3 wounds in a row or themselves 10 schemes in a row.
+  </p>
+  <p>
+    At the start of each round, choose any Stat to roll as you get in position for what you want to do. Gain temporary Blessings equal to half this roll rounded down. Turn order follows the number of temporary Blessings, lowest to highest. You lose unspent temporary Blessings when the Endeavor ends.
+  </p>
+  <p>
+    Choose one action during your turn:
+  </p>
+  <ul>
+    <li><strong>🗡️ Violent Attack</strong><br><i>Hurt only.</i> Use your position roll to violently Attack an opponent. On a Maximum Success, remove them from the Endeavor. On other successes, they move down by half your position roll, rounded down. <i>Violence is most effective as a finishing blow or a group effort.</i></li>
+    <li><strong>🧩 Non-violent Attack</strong><br><i>Not Hurt.</i> Use your position roll to non-violently Attack an opponent. On a success, steal a number of temporary Blessings from them equal to half your position roll, rounded down.</li>
+    <li><strong>🚩 Advance</strong><br><i>Not Hurt.</i> Use your position roll to advance your team's objectives. Move up by half your position roll, rounded down.</li>
+    <li><strong>🛡️ Protect</strong><br><i>Any Stat.</i> Ignore your position roll and spend Blessings to protect yourself or an ally from the opponents' objectives. For each Blessing spent, their relevant Checks are one rank more difficult, until your next turn.</li>
+    <li><strong>↪️ Pass</strong><br><i>Any Stat.</i> Skip or delay your action so you can Help another character who has not acted this round or so they can Help you.</li>
+    <li><strong>🌀 Unique Skill</strong><br><i>Any Stat.</i> Spend ⊜⊜ to perform an action unique to your character. Take two other actions combined.</li>
+  </ul>
+  <p>You may also spend Blessings during your turn before you act to Spark your position roll, but this will not give you more temporary Blessings.</p>
+  <p>
+    If you end the round with the most temporary Blessings, choose one special action:
+  </p>
+  <ul>
+    <li><strong>✨ Perform a Combo</strong><br>Move up by your number of temporary Blessings, then spend all your temporary Blessings. You and your allies may move down any total amount, then choose opponents to move down by that same total amount.</li>
+    <li><strong>👑 Declare Victory</strong><br>If you are at position 30 or higher, spend all your temporary Blessings, then choose an opponent to declare victory over and remove from the Endeavor.</li>
+  </ul>
+</div> -->
+<div id="dice" class="clear"></div>
+<div id="font-fix">✿</div>

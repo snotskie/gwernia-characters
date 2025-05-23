@@ -1,0 +1,49 @@
+stats:
+  - emoji: 🧠
+    name: Head
+    value: d4
+  - emoji: ✌️
+    name: Hand
+    value: d8
+  - emoji: 💕
+    name: Heart
+    value: d6
+  - emoji: ☕️
+    name: Home
+    value: d6
+  - emoji: 👿
+    name: Hurt
+    value: d4
+  - emoji: ⚠️
+    name: Hurry
+    value: d8
+  - emoji: ⏳
+    name: History
+    value: d6
+  - emoji: 🪶
+    name: Hex
+    value: d6
+name: 🜲 Arlo
+subname: Carefree, Vice and Virtue, Human. Adopted princeling.
+effects:
+  - name: ☀️ Sunblessed
+    effect: During the day (9am to 7pm), your Blessings are each worth 1 more, to a maximum of 6. However, during the night (9pm to 7am), your Blessings are each worth 1 less, to a minimum of 0.
+  - name: 💀 Taxed
+    effect: Until treated, you cannot spark. Held at bay until 7pm.
+aptitudes:
+  - name: Local Gwernian history [Resolved]
+    effect: When an Attack succeeds against you, the Attacker receives one fewer boon and one additional bust than usual, and you gain a Blessing. Recharge: ④.
+  - name: Alchemy [Mischievous]
+    effect: When another character would succeed a Check, you may distract them using an thing you have gained, such as an item, information, or alliance. If you do, modify that character's result by -3, possibly turning their success into a failure. Recharge: ⑤.
+items:
+  - name: Sharp Sword ⭐
+    effect: While using this item as intended, you may round rolls of 7 up to 8.
+  - name: Pouch of Smoking Powder
+  - name: Snacks!
+  - name: Small Knife
+  - name: Namer’s Ring ⭐
+    effect: While wearing this ring and attempting to perform Naming magic, you may round rolls of 7 up to 8. Moreover, you do not need to expend reagents to perform simple Naming magic while wearing this ring.
+  - name: Acclimation Cloak ❇⿻
+    effect: While protecting yourself against weather-based effects, you may round a roll of 3 or 4 up to 5. However, once you round two rolls this way, this item loses this effect and becomes a mundane green cloak.
+  - name: Mud Masks
+  - name: Cucumbers

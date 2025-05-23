@@ -1,0 +1,25 @@
+effects:
+  - name: 💢 Violent Attack
+    effect: Use your position roll to violently Attack an opponent. On a Maximum Success, remove them from the Endeavor. On other successes,  they gain a wound button at their current position or the first position above or below them without one already.
+  - name: 🧩 Non-violent Attack
+    effect: Use your position roll to non-violently Attack an opponent. On a success, steal a number of temporary Blessings from them equal to half your position roll, rounded down.
+  - name: ♟️ Advance
+    effect: Ignore your position roll while you advance your team's objectives. Add a scheme button at your current position or the first position above or below you without one already.
+  - name: 🛡️ Protect
+    effect: Ignore your position roll and spend Blessings to protect yourself or an ally from the opponents' objectives. For each Blessing spent, their relevant Checks are one rank more difficult, until your next turn.
+  - name: ↪️ Pass
+    effect: Skip or delay your action so you can Help another character who has not acted this round or so they can Help you.
+  - name: 💥 Perform a Combo [Special Action]
+    effect: Spend all your temporary Blessings. Choose an opponent, then any number of additional opponents with a number of temporary Blessings less than your Combo Range. They each gain a wound button at their current position or the first or second position above or below them without one already. Then any opponents with three or more wounds in a row are removed from the Endeavor.
+  - name: ⛓️ Declare Victory [Special Action]
+    effect: If there are 10 or more scheme buttons in a row, spend all your temporary Blessings, then choose an opponent to declare victory over and remove from the Endeavor.
+  - name: 🟢 Recovery Button
+    effect: Type: Personal. Activation: Activate this button when you move over it. Effect: End your movement, remove this button, and return to your starting position.
+  - name: 🔴 Revenge Button
+    effect: Type: Personal. Activation: Activate this button when you move over it. Effect: End your movement, remove this button, and immediately use Violent Attack or Non-violent Attack against an opponent who caused you to move down this round, even if you have already acted this round.
+  - name: 🔵 Scheme Button
+    effect: Type: Global. Activation: None. Effect: None.
+  - name: 🔘 Defeat Button
+    effect: Type: Personal. Activation: Activate this button when you move over it. Effect: End your movement, remove this button, and you are removed from the Endeavor.
+  - name: ⭕ Wound Button
+    effect: Type: Personal. Activation: Activate this button when you move over it while moving up. Effect: Decrease your remaining movement by 1, to a minimum of 0.

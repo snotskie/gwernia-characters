@@ -1,0 +1,46 @@
+stats:
+  - emoji: 🧠
+    name: Head
+    value: d10
+  - emoji: ✌️
+    name: Hand
+    value: d4
+  - emoji: 💕
+    name: Heart
+    value: d4
+  - emoji: ☕️
+    name: Home
+    value: d6
+  - emoji: 👿
+    name: Hurt
+    value: d4
+  - emoji: ⚠️
+    name: Hurry
+    value: d6
+  - emoji: ⏳
+    name: History
+    value: d8
+  - emoji: 🪶
+    name: Hex
+    value: d2
+name: 🜌 Rhovan Ironwood
+subname: Wisened, Vice and Virtue, Jundar. Tinkerer, not a drug dealer.
+effects:
+  - name: 💠 Moonblessed
+    effect: Attacks made against you during the night (9pm to 7am) are one rank harder. However, during the day (9am to 7pm) they are one rank easier.
+aptitudes:
+  - name: Mechanical Tinkering [Excessive]
+    effect: Once per session, you may destroy a thing you have gained, such as an item, information, or alliance. Until the end of the scene, you adopt its properties, the properties of a concept associated with it, or push it to its breaking point.
+  - name: Erromoni Druidcraft Theory [Determined]
+    effect: Once per action, you may ignore the negative effects of your injuries and conditions. Recharge: ③.
+items:
+  - name: Cloak of Darkest Night 🌟
+    effect: While wearing this cloak and attempting to intimidate someone, impress someone, or conduct clandestine business, you may round rolls of 6 or 7 up to 8.
+  - name: Improved Crossbow ⭐
+    effect: While using this item as intended, you may round rolls of 7 up to 8.
+  - name: 𝟤x Bars High-Quality Metals (crafting reagents)
+  - name: Tinkerer Toolkit 
+  - name: Kettle
+  - name: Zombie Parts
+  - name: Prototype Page
+  - name: Tupperware full of fondue

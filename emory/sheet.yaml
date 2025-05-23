@@ -1,0 +1,42 @@
+stats:
+  - emoji: 🧠
+    name: Head
+    value: d8
+  - emoji: ✌️
+    name: Hand
+    value: d8
+  - emoji: 💕
+    name: Heart
+    value: d2
+  - emoji: ☕️
+    name: Home
+    value: d4
+  - emoji: 👿
+    name: Hurt
+    value: d6
+  - emoji: ⚠️
+    name: Hurry
+    value: d4
+  - emoji: ⏳
+    name: History
+    value: d4
+  - emoji: 🪶
+    name: Hex
+    value: d8
+name: 🜛 Emory
+subname: Eager, Vice and Virtue, Jundar. Forest goblin?
+effects:
+  - name: 💠 Moonblessed
+    effect: Attacks made against you during the night (9pm to 7am) are one rank harder. However, during the day (9am to 7pm) they are one rank easier.
+aptitudes:
+  - name: Potion Making [Favored]
+    effect: When you succeed a Check related enough to this Aptitude, gain an additional boon, within reason.
+  - name: Note-taking/Recollection [Analytical]
+    effect: Twice per session, you may provide Help by rolling four d6 and group those dice into two piles of two. If addition or multiplication could make the piles equal, increase the result of the roll you are Helping by +5. For example, 1, 1, 1, and 2, could be grouped this way as 1x2=1+1.
+  - name: Mirari theory
+items:
+  - name: Fine Field Journal ⭐
+    effect: While using this item as intended, you may round rolls of 7 up to 8.
+  - name: Sample Collection Pouch
+  - name: Small Knife
+  - name: Forest reagents (for Elemental magic / Alchemy)

@@ -1,0 +1,166 @@
+:root {
+  font-size: 16pt;
+  --color-lighter: #eee;
+  --color-light: #ccc;
+  --color-dark: #444;
+  --color-darker: #222;
+  --symbol-bump: "✿";
+  --font-body: "PT Sans";
+  --font-dice: "Noto Emoji";
+  --font-emoji: "Noto Color Emoji";
+  font-family: var(--font-body);
+  color: var(--color-lighter);
+}
+
+body {
+  background: var(--color-darker);
+  padding: .5rem;
+}
+
+h1, strong, .stat .value {
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: var(--color-light);
+}
+
+a {
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+h1, strong {
+  font-family: var(--font-emoji), var(--font-body);
+}
+
+h1, p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: 1ch;
+}
+
+.row {
+  background: var(--color-darker);
+  border: .25ch solid var(--color-dark);
+  padding: 1ch;
+  margin: 0 auto;
+  max-width: 40ch;
+  border-radius: 0;
+}
+
+.row:not(:first-child) {
+  border-top: 0;
+}
+
+.stat {
+  --width-stat: 25%;
+  text-align: center;
+  width: calc(var(--width-stat) - 2 * 1ch / 4 - 2 * .25ch / 4);
+  display: inline-block;
+  min-width: 4.75ch;
+  max-width: 50%;
+  margin-top: 1ch;
+}
+
+#stats-row {
+  padding-top: 0;
+}
+
+.emoji {
+  font-size: 1.5rem;
+  font-family: var(--font-emoji);
+}
+
+.homepage a {
+  background: var(--color-darker);
+  color: var(--color-lighter);
+  text-decoration: none;
+  height: 3ch;
+  margin: .5ch auto;
+  display: block;
+  width: 25ch;
+  text-align: center;
+  align-content: center;
+  border: .25ch solid var(--color-dark);
+  border-radius: 1ch;
+}
+
+#dice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-body), var(--font-dice);
+}
+
+#dice.clear {
+  left: 9999px;
+}
+
+#dice.result::before {
+  content: attr(data-total);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  height: 66vmin;
+  width: 4ch;
+  x-width: 66vmin;
+/*   xbackground: var(--color-darker); */
+  text-shadow:
+    .5vmin .5vmin var(--color-darker),
+    0 0 8vmin var(--color-dark);
+  color: var(--color-light);
+  font-weight: bold;
+/*   xborder: 3px solid var(--color-dark); */
+/*   xborder-radius: 999px; */
+  text-align: center;
+  align-content: center;
+  x-margin-left: -33vmin;
+  margin-left: -2ch;
+  margin-top: -33vmin;
+  font-size: 25vmin;
+  white-space: nowrap;
+}
+
+#font-fix {
+  color: transparent;
+  font-family: var(--font-dice);
+  float: left;
+}
+
+@media print {
+  :root {
+    color-scheme: only light !important;
+    --color-darker: #fff !important;
+    --color-dark: #000 !important;
+    --color-light: #000 !important;
+    --color-lighter: #000 !important;
+    --font-emoji: "Noto Emoji" !important;
+    font-size: 1rem !important;
+  }
+
+  .emoji, .row strong {
+    --font-body: "Noto Emoji", "PT Sans" !important;
+  }
+
+  #helping-row, #checks-row, #difficulty-row, #attacks-row, #ethics-row, #schools-row {
+    display: none;
+  }
+  
+  .row {
+    border: 0;
+  }
+  
+  body {
+    width: 8in;
+    height: 10.5in;
+    margin: .25in;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    column-gap: 1em;
+  }
+}

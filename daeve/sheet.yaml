@@ -1,0 +1,48 @@
+stats:
+  - emoji: 🧠
+    name: Head
+    value: d4
+  - emoji: ✌️
+    name: Hand
+    value: d8
+  - emoji: 💕
+    name: Heart
+    value: d6
+  - emoji: ☕️
+    name: Home
+    value: d8
+  - emoji: 👿
+    name: Hurt
+    value: d6
+  - emoji: ⚠️
+    name: Hurry
+    value: d6
+  - emoji: ⏳
+    name: History
+    value: d8
+  - emoji: 🪶
+    name: Hex
+    value: d2
+name: 🐡 Daeve
+subname: Eager, Vice and Virtue, Human. Is in the military uses big sword loves fishing. Suspicious of mud.
+effects:
+  - name: ☀️ Sunblessed
+    effect: During the day (9am to 7pm), your Blessings are each worth 1 more, to a maximum of 6. However, during the night (9pm to 7am), your Blessings are each worth 1 less, to a minimum of 0.
+aptitudes:
+  - name: Fishing [Calm]
+    effect: Once per session, when you are in a safe place, you may perform a Check using Head, Home, or an unconventional Stat balanced with either. Then once before the end of the session, you may use the value of that roll instead of rolling for another non-violent Check.
+  - name: Interactions with guards [Shameless]
+    effect: Once per session, when your Blessings have a total combined worth of at least 10, you may perform a joke, dance, or stunt related enough to your Lifestyle. Each other character who witnesses this becomes Uncool.
+  - name: Small Tools (not only for torture)
+items:
+  - name: Sword (bigger) ⭐
+    effect: While using this item as intended, you may round rolls of 7 up to 8.
+  - name: Shield
+    effect: Attacks made against you as the result of a Revenge tag are one rank more difficult.
+  - name: Keys
+  - name: Fishing Gear
+  - name: Ice Fishing Gear
+  - name: Scale Armor 🩸⿻
+    effect: During Endeavors, you do not receive wounds from Attacks made with a roll of 5 or less, calculated before such rolls are rounded up by other effects. However, once you prevent two wounds this way, this item loses this effect until it has been repaired.
+  - name: Acclimation Cloak ❇⿻
+    effect: While protecting yourself against weather-based effects, you may round a roll of 3 or 4 up to 5. However, once you round two rolls this way, this item loses this effect and becomes a mundane green cloak.

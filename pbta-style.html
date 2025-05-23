@@ -1,0 +1,158 @@
+<div class="row">
+  {{@foreach(it.stats) => i, stat}}
+    <div class="stat">
+      <div class="emoji">
+        {{stat.emoji}}
+      </div>
+      <div>
+        {{stat.name}}
+      </div>
+      <div class="value">
+        <a href="javascript:queueRoll('{{stat.value}}')">{{stat.value}}</a>
+      </div>
+    </div>
+  {{/foreach}}
+</div>
+{{@if(it.name)}}
+  <div class="row">
+    <h1>
+      {{it.name}}
+    </h1>
+    {{@if(it.subname)}}
+      <p>
+        {{it.subname}}
+      </p>
+    {{/if}}
+  </div>
+{{/if}}
+{{@foreach(it.effects) => i, effect}}
+  <div class="row">
+    <h1>
+      {{effect.name}}
+    </h1>
+    <p>
+      {{effect.effect}}
+    </p>
+  </div>
+{{/foreach}}
+<div class="row">
+  <h1>
+    🎲 Checks
+  </h1>
+  <p>
+    Roll 4 or lower: Fail.
+  </p>
+  <p>
+    Roll 5, 6, or 7: Minor Success. Often comes with complications.
+  </p>
+  <p>
+    Roll 8, 9, or 10: Medium Success.
+  </p>
+  <p>
+    Roll 11 or higher: Major Success. On your first Major Success each session, gain a Blessing, and players whose characters witnessed or heard about that success also gain a Blessing.
+  </p>
+</div>
+<div class="row">
+  <h1>
+    🎲 Contests
+  </h1>
+  <p>
+    If the Defender has a d2 in their defending Stat, the Attacker's Check gets +2.
+  </p>
+  <p>
+    If the Defender has a d4 in their defending Stat, the Attacker's Check gets +1.
+  </p>
+  <p>
+    If the Defender has a d8 in their defending Stat, the Attacker's Check gets -1.
+  </p>
+  <p>
+    If the Defender has a d10 in their defending Stat, the Attacker's Check gets -2.
+  </p>
+</div>
+<div class="row">
+  <h1>
+    🤝 Helping
+  </h1>
+  <p>
+    Once per roll you may Help another character by spending ①. If you do, they roll again, taking the higher value. Multiple characters can Help the same roll. You cannot Help if you are engaged in another action or if it would be unreasonable.
+  </p>
+</div>
+<!-- <div class="row">
+  <h1>
+    ☠️ Danger
+  </h1>
+  <p>
+    You may spend Blessings and describe an upcoming danger your character anticipates, within reason. Until the end of the scene, the next roll you would make to protect against the danger automatically wins/succeeds if rolling equal to the total of the Blessings spent would have been enough to win/succeed.
+  </p>
+</div> -->
+{{@if(it.aptitudes)}}
+  <div class="row">
+    <h1>
+      Aptitiudes [Specializations]
+    </h1>
+    <p>
+      When you would fail a Check related enough to your Aptitudes, receive +2 in aid.
+    </p>
+    <ul>
+      {{@foreach(it.aptitudes) => i, apt}}
+        <li>
+          <strong>{{apt.name}}</strong>
+          {{@if(apt.effect)}}
+            <br>
+            {{apt.effect}}
+          {{/if}}
+        </li>
+      {{/foreach}}
+    </ul>
+  </div>
+{{/if}}
+{{@if(it.items)}}
+  <div class="row">
+    <h1>
+      Items
+    </h1>
+    <ul>
+      {{@foreach(it.items) => i, item}}
+        <li>
+          <strong>{{item.name}}</strong>
+          {{@if(item.effect)}}
+            <br>
+            {{item.effect}}
+          {{/if}}
+        </li>
+      {{/foreach}}
+    </ul>
+  </div>
+{{/if}}
+<div class="row">
+  <h1>
+    Monstrous Endeavors
+  </h1>
+  <p>
+    Your goal is to move your opponents to 0 or yourself to 30. Their goal is to give you 3 wounds in a row or themselves 10 schemes in a row.
+  </p>
+  <p>
+    At the start of each round, choose any Stat to roll as you get in position for what you want to do. Gain temporary Blessings equal to half this roll rounded down. Turn order follows the number of temporary Blessings, lowest to highest. You lose unspent temporary Blessings when the Endeavor ends.
+  </p>
+  <p>
+    Choose one action during your turn:
+  </p>
+  <ul>
+    <li><strong>🗡️ Violent Attack</strong><br><i>Hurt only.</i> Use your position roll to violently Attack an opponent. On a Major Success, remove them from the Endeavor. On Minor or Medium, they move down by half your roll, rounded down. <i>Violence is most effective as a finishing blow or a group effort.</i></li>
+    <li><strong>🧩 Non-violent Attack</strong><br><i>Not Hurt.</i> Use your position roll to non-violently Attack an opponent. If you win, steal a number of temporary Blessings from them equal to the amount you won by.</li>
+    <li><strong>🚩 Advance</strong><br><i>Not Hurt.</i> Use your position roll to perform a Check to advance your team's objectives. Move up by half your position roll, rounded down.</li>
+    <li><strong>🛡️ Protect</strong><br><i>Any Stat.</i> Ignore your position roll and spend Blessings to protect yourself or an ally from the opponents' objectives. Until your next turn, their relevant rolls must exceed the total of the Blessings spent or they fail/lose.</li>
+    <li><strong>↪️ Pass</strong><br><i>Any Stat.</i> Skip or delay your action so you can Help another character who has not acted this round or so they can Help you.</li>
+    <li><strong>🌀 Unique Skill</strong><br><i>Any Stat.</i> Spend ⊜⊜ to perform an action unique to your character. Take two other actions combined.</li>
+  </ul>
+  <p>You may also spend Blessings during your turn before you act to Spark your position roll, but this will not give you more temporary Blessings.</p>
+  <p>
+    If you end the round with the most temporary Blessings, choose one special action:
+  </p>
+  <ul>
+    <li><strong>✨ Perform a Combo</strong><br>Move up by your number of temporary Blessings, then spend all your temporary Blessings. You and your allies may move down any total amount, then choose opponents to move down by that same total amount.</li>
+    <li><strong>👑 Declare Victory</strong><br>If you are at position 30 or higher, spend all your temporary Blessings, then choose an opponent to declare victory over and remove from the Endeavor.</li>
+  </ul>
+</div>
+<div id="dice" class="clear"></div>
+<div id="font-fix">✿</div>

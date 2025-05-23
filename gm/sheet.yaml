@@ -1,0 +1,31 @@
+stats:
+  - emoji: 2️⃣
+    name: ""
+    value: d2
+  - emoji: 4️⃣
+    name: ""
+    value: d4
+  - emoji: 6️⃣
+    name: ""
+    value: d6
+  - emoji: 8️⃣
+    name: ""
+    value: d8
+  - emoji: 0️⃣
+    name: ""
+    value: d10
+name: GM Notes
+subname: GM eyes only
+items:
+  - name: Fail Less *️
+    effect: Round 4 up to 5
+  - name: Fail Even Less ❇
+    effect: Round 3 or 4 up to 5
+  - name: Succeed Simpler ⭐
+    effect: Round 7 up to 8
+  - name: Succeed Even Simpler 🌟
+    effect: Round 6 or 7 up to 8
+  - name: Charges ⿻
+    effect: Limited charges
+  - name: Armor 🩸
+    effect: Prevents wounds

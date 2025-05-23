@@ -1,0 +1,42 @@
+stats:
+  - emoji: 🧠
+    name: Head
+    value: d8
+  - emoji: ✌️
+    name: Hand
+    value: d8
+  - emoji: 💕
+    name: Heart
+    value: d4
+  - emoji: ☕️
+    name: Home
+    value: d8
+  - emoji: 👿
+    name: Hurt
+    value: d4
+  - emoji: ⚠️
+    name: Hurry
+    value: d6
+  - emoji: ⏳
+    name: History
+    value: d6
+  - emoji: 🪶
+    name: Hex
+    value: d2
+name: 🜁 So
+subname: Wisened, Vice and Virtue, Jundar. Loyal ranger, attached to Feylin.
+effects:
+  - name: 💠 Moonblessed
+    effect: Attacks made against you during the night (9pm to 7am) are one rank harder. However, during the day (9am to 7pm) they are one rank easier.
+aptitudes:
+  - name: Camping [Sure-footed]
+    effect: During Endeavors, when you take the Protect action to protect yourself, you may use your position roll to perform a Check to protect yourself further. On a success, the Protect effect lasts an additional number of rounds equal to the standard amount.
+  - name: Unfriendly Interactions with Undead [Attentive]
+    effect: When you succeed a Check using Hand, Heart, or an unconventional Stat balanced with either, for your subsequent action you may perform a violent Attack using that same Stat. Recharge: ③.
+  - name: Cool under pressure
+items:
+  - name: Bow ⭐
+    effect: While using this item as intended, you may round rolls of 7 up to 8.
+  - name: Traveling Bag ⭐
+    effect: While using this item as intended, you may round rolls of 7 up to 8.
+  
