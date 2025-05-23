@@ -1,7 +1,7 @@
 addEventListener("load", () => {
   document.fonts.ready.then((fontFaces) => {
     console.log(...fontFaces);
-    fetch("/view.html").then((response) => response.text()).then((view) => {
+    fetch("/gwernia-characters/view.html").then((response) => response.text()).then((view) => {
       fetch(`${location.pathname}/sheet.yaml`).then((response) => response.text()).then((sheet) => {
         document.body.innerHTML = Sqrl.render(view, YAML.parse(sheet));
         const dice = document.getElementById("dice");
