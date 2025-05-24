@@ -71,10 +71,10 @@
     </ul>
   </div>
 {{/if}}
-<div class="row" id="checks-row">
-  <h1>
+<details class="row" id="checks-row">
+  <summary>
     🎲 Checks
-  </h1>
+  </summary>
   <p>
     Roll 2 or lower: Fail.
   </p>
@@ -96,52 +96,52 @@
   <p>
     Roll 20+: Maximum Success (exceptional boon).
   </p>
-</div>
-<div class="row" id="difficulty-row">
-  <h1>
+</details>
+<details class="row" id="difficulty-row">
+  <summary>
     🪨 Difficulty
-  </h1>
+  </summary>
   <p>
     Hard: Roll twice, need to succeed both.
   </p>
   <p>
     Complex: At least three rolls, with different Stats and/or characters per roll, fail at most once.
   </p>
-</div>
-<div class="row" id="helping-row">
-  <h1>
+</details>
+<details class="row" id="helping-row">
+  <summary>
     🤝 Helping
-  </h1>
+  </summary>
   <p>
     Once per roll you may Help another character by spending ①.
     They add half the value of that Blessing to the roll, rounded down, to a minimum of 1.
     They also gain an additional bust.
     You cannot Help if you are engaged in another action or if it would be unreasonable.
   </p>
-</div>
-<div class="row" id="attacks-row">
-  <h1>
+</details>
+<details class="row" id="attacks-row">
+  <summary>
     🔄 Attacks
-  </h1>
+  </summary>
   <p>
     Only Attacker rolls. If Defender has a relevant Apt, Check is one rank harder. If the Apt is Spec'd, it's another rank harder.
   </p>
-</div>
-<div class="row" id="ethics-row">
-  <h1>
+</details>
+<details class="row" id="ethics-row">
+  <summary>
     ⚔️ Vice &amp; Virtue
-  </h1>
+  </summary>
   <p>
     Gain Blessings for completing important story milestones.
   </p>
   <p>
     On your first Major Success each session, gain a Blessing. Each other player whose character witnessed or heard about that success also gains a Blessing.
   </p>
-</div>
-<div class="row" id="schools-row">
-  <h1>
+</details>
+<details class="row" id="schools-row">
+  <summary>
     📜 Schools
-  </h1>
+  </summary>
   <ul>
     <li>
       <strong>Elemental</strong><br />
@@ -213,7 +213,22 @@
   <p>
     Reagents are required to craft items and cast spells. You may expend high quality reagents and spend a Blessing to grant yourself Help on a related roll.
   </p>
-</div>
+</details>
+<details class="row" id="monstrous-row">
+  <summary>
+    🧟 Monstrous Endeavors
+  </summary>
+  <ul>
+    <li><strong>Violent Attack</strong><br /><em>Hurt only.</em> Use your position roll to violently Attack an opponent. On a Maximum Success, remove them from the Endeavor. On other successes, they move down by the standard amount.</li>
+    <li><strong>Non-violent Attack</strong><br /><em>Not Hurt.</em> Use your position roll to non-violently Attack an opponent. On a success, steal a number of temporary Blessings from them equal to the standard amount.</li>
+    <li><strong>Advance</strong><br /><em>Not Hurt.</em> Use your position roll to perform a Check to advance your team's objectives. On a success, move up by the standard amount.</li>
+    <li><strong>Protect</strong><br /><em>Any Stat.</em> Ignore your position roll and spend Blessings to protect yourself or an ally from the opponents' objectives. For each Blessing spent, their relevant Attacks are one rank more difficult, until your next turn.</li>
+    <li><strong>Pass</strong><br /><em>Any Stat.</em> Skip or delay your action so you can Help another character who has not acted this round or so they can Help you.</li>
+    <li><strong>Unique Skill</strong><br /><em>Any Stat.</em> Spend ⊜⊜ to perform an action unique to your character. Take two other actions combined.</li>
+    <li><strong>Perform Combo</strong><br /><em>Special Action.</em> Move up by your number of temporary Blessings, then spend all your temporary Blessings. Then you and your allies may move down any total amount. If you do, choose opponents to move down by a total of the amount moved this way.</li>
+    <li><strong>Declare Victory</strong><br /><em>Special Action.</em> If you are at position 30 or higher, spend all your temporary Blessings and choose an opponent to remove from the Endeavor.</li>
+  </ul>
+</details>
 <!-- <div class="row">
   <h1>
     Monstrous Endeavors

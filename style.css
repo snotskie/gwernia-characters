@@ -17,7 +17,7 @@ body {
   padding: .5rem;
 }
 
-h1, strong, .stat .value {
+h1, strong, .stat .value, summary {
   font-weight: bold;
   font-size: 1.125rem;
   color: var(--color-light);
