@@ -22,7 +22,7 @@ stats:
     value: d8
   - emoji: 🪶
     name: Hex
-    value: d2
+    value: d6
 name: ☠ Keelin
 subname: Carefree, Vice and Virtue, Human. Rebellious Merchant’s daughter
 effects:
@@ -35,6 +35,7 @@ aptitudes:
     effect: When you succeed a Check related enough to this Aptitude, gain an additional boon, within reason.
   - name: Showboating
 items:
+  - name: Pickpocketed Odds and Ends
   - name: Fine Spyglass ⭐
     effect: While using this item as intended, you may round rolls of 7 up to 8.
   - name: Trusty Thieves Tools ⭐
@@ -42,5 +43,5 @@ items:
   - name: Shortsword
   - name: Invisibility Cloak ❇⿻
     effect: While wearing this cloak and attempting to move or perform an action unseen, you may round a roll of 3 or 4 up to 5 and you may roll for such actions using Hex instead of Hand as usual. However, once you round two rolls this way, this item loses this effect until recharged by moonlight.
-  - name: Green broadsword? ⭐
-    effect: While Attacking with this weapon, you may round rolls of 7 up to 8. If you succeed with a boon, you may also leave the opponent poisoned.
+  - name: Green Claymore ⭐
+    effect: While Attacking with this weapon, you may round rolls of 7 up to 8 and you may roll for such actions using Hex instead of Hurt as usual. If you succeed with a boon, you may also leave the opponent poisoned.
