@@ -7,7 +7,7 @@ stats:
     value: d8
   - emoji: 💕
     name: Heart
-    value: d2
+    value: d4
   - emoji: ☕️
     name: Home
     value: d4
@@ -19,12 +19,12 @@ stats:
     value: d4
   - emoji: ⏳
     name: History
-    value: d4
+    value: d6
   - emoji: 🪶
     name: Hex
     value: d8
 name: 🜛 Emory
-subname: Eager, Vice and Virtue, Jundar. Forest goblin?
+subname: Eager, Vice and Virtue, Jundar. Forest goblin and only child.
 effects:
   - name: 💠 Moonblessed
     effect: Attacks made against you during the night (9pm to 7am) are one rank harder. However, during the day (9am to 7pm) they are one rank easier.
@@ -39,4 +39,7 @@ items:
     effect: While using this item as intended, you may round rolls of 7 up to 8.
   - name: Sample Collection Pouch
   - name: Small Knife
-  - name: Forest reagents (for Elemental magic / Alchemy)
+  - name: Sensible Knife
+  - name: Rope
+  - name: Torches
+  - name: "Drink Me" Potions
