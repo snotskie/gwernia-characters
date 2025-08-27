@@ -2,27 +2,35 @@ stats:
   - emoji: 🧠
     name: Head
     value: d8
+    x: 2
   - emoji: ✌️
     name: Hand
     value: d8
+    x: 2
   - emoji: 💕
     name: Heart
     value: d4
+    x: 1
   - emoji: ☕️
     name: Home
     value: d4
+    x: 1
   - emoji: 👿
     name: Hurt
     value: d6
+    x: 2
   - emoji: ⚠️
     name: Hurry
     value: d4
+    x: 1
   - emoji: ⏳
     name: History
     value: d6
+    x: 2
   - emoji: 🪶
     name: Hex
     value: d8
+    x: 2
 name: 🜛 Emory
 subname: Eager, Vice and Virtue, Jundar. Forest goblin and only child.
 effects:
