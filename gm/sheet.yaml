@@ -2,18 +2,23 @@ stats:
   - emoji: 2️⃣
     name: ""
     value: d2
+    x: 1
   - emoji: 4️⃣
     name: ""
     value: d4
+    x: 1
   - emoji: 6️⃣
     name: ""
     value: d6
+    x: 2
   - emoji: 8️⃣
     name: ""
     value: d8
+    x: 2
   - emoji: 0️⃣
     name: ""
     value: d10
+    x: 3
 name: GM Notes
 subname: GM eyes only
 items:
