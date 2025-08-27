@@ -2,27 +2,35 @@ stats:
   - emoji: 🧠
     name: Head
     value: d4
+    x: 1
   - emoji: ✌️
     name: Hand
     value: d6
+    x: 2
   - emoji: 💕
     name: Heart
     value: d8
+    x: 2
   - emoji: ☕️
     name: Home
     value: d4
+    x: 1
   - emoji: 👿
     name: Hurt
     value: d6
+    x: 2
   - emoji: ⚠️
     name: Hurry
     value: d8
+    x: 2
   - emoji: ⏳
     name: History
     value: d8
+    x: 2
   - emoji: 🪶
     name: Hex
     value: d6
+    x: 2
 name: ☠ Keelin
 subname: Carefree, Vice and Virtue, Human. Rebellious Merchant’s daughter
 effects:
