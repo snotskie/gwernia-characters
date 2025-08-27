@@ -2,27 +2,35 @@ stats:
   - emoji: 🧠
     name: Head
     value: d4
+    x: 1
   - emoji: ✌️
     name: Hand
     value: d8
+    x: 2
   - emoji: 💕
     name: Heart
     value: d6
+    x: 2
   - emoji: ☕️
     name: Home
     value: d8
+    x: 2
   - emoji: 👿
     name: Hurt
     value: d6
+    x: 2
   - emoji: ⚠️
     name: Hurry
     value: d6
+    x: 2
   - emoji: ⏳
     name: History
     value: d8
+    x: 2
   - emoji: 🪶
     name: Hex
     value: d2
+    x: 1
 name: 🐡 Daeve
 subname: Eager, Vice and Virtue, Human. Is in the military uses big sword loves fishing. Suspicious of mud.
 effects:
