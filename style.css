@@ -72,6 +72,12 @@ p + p {
   font-family: var(--font-emoji);
 }
 
+.emoji .spent {
+  color: transparent;  
+  text-shadow: 0 0 0 var(--color-lighter);
+  opacity: 0.7;
+}
+
 .homepage a {
   background: var(--color-darker);
   color: var(--color-lighter);

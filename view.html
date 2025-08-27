@@ -2,7 +2,7 @@
   {{@foreach(it.stats) => i, stat}}
     <div class="stat">
       <div class="emoji">
-        <a href="javascript:queueRoll('{{stat.value}}')">{{stat.emoji}}</a>
+        <a href="javascript:void(0)" onclick="this.classList.toggle('spent')">{{stat.emoji}}</a>
       </div>
       <div>
         <a href="javascript:queueRoll('{{stat.value}}')">{{stat.name}}</a>
