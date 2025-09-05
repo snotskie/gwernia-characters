@@ -75,51 +75,19 @@
     </ul>
   </div>
 {{/if}}
-<details class="row" id="checks-row">
+<details class="no-print row" id="checks-row">
   <summary>
     🎲 Checks
   </summary>
   {{it.humanity.books.humanityblessed.pages.checks.html | safe}}
-  <!-- <p>
-    Roll 2, 3, or 4: Fail. If Easy or Apt, round 3 or 4 up to 5
-  </p>
-  <p>
-    Roll 5, 6, or 7: Minor Success (comes with a bust). Some effects round 6 or 7 up to 8.
-  </p>
-  <p>
-    Roll 8, 9, or 10: Medium Success.
-  </p>
-  <p>
-    Roll 11 to 19: Major Success (comes with a boon).
-  </p>
-  <p>
-    Roll 20+: Maximum Success (exceptional boon).
-  </p> -->
 </details>
-<!-- <details class="row" id="difficulty-row">
-  <summary>
-    🪨 Difficulty
-  </summary>
-  <p>
-    Hard: Roll twice, need to succeed both. Use different Stats and/or characters per roll.
-  </p>
-  <p>
-    Harder: Each rank beyond Hard requires an additional roll.
-  </p>
-</details> -->
-<details class="row" id="helping-row">
+<details class="no-print row" id="helping-row">
   <summary>
     🤝 Helping
   </summary>
   {{it.humanity.books.humanityblessed.pages.helping.html | safe}}
-  <!-- <p>
-    Once per roll you may Help another character by spending ①.
-    They add half the value of that Blessing to the roll or to <b>X</b>, rounded down, to a minimum of 1.
-    They also gain an additional bust.
-    You cannot Help if you are engaged in another action or if it would be unreasonable.
-  </p> -->
 </details>
-<details class="row" id="attacks-row">
+<details class="no-print row" id="attacks-row">
   <summary>
     🔄 Attacks
   </summary>
@@ -128,7 +96,7 @@
     <em>If Defender has a relevant Apt, Check is one rank harder.</em>
   </p>
 </details>
-<details class="row" id="gains-row">
+<details class="no-print row" id="gains-row">
   <summary>
     🪙 Gains
   </summary>
@@ -136,7 +104,7 @@
   <p>The less believable, the more difficult.</p>
   <p>Failure could damage existing gains: drop an item, strain a relationship, or complicate the facts, for example.</p>
 </details>
-<details class="row" id="ethics-row">
+<details class="no-print row" id="ethics-row">
   <summary>
     ⚔️ Vice &amp; Virtue
   </summary>
@@ -147,7 +115,7 @@
     On your first Major Success each session, gain a Blessing. Each other player whose character witnessed or heard about that success also gains a Blessing.
   </p>
 </details>
-<details class="row" id="schools-row">
+<details class="no-print row" id="schools-row">
   <summary>
     📜 Schools
   </summary>
@@ -233,35 +201,38 @@
     Reagents are required to craft items and cast spells. You may expend high quality reagents and spend a Blessing to grant yourself Help on a related roll.
   </p>
 </details>
-<!-- <details class="row" id="monstrous-row">
+<details class="no-print row" id="endeavors-row">
+  <summary>
+    Endeavors
+  </summary>
+  {{it.humanity.books.humanityblessed.pages.rounds.html | safe}}
+  {{it.humanity.books.humanityblessed.pages.actions.html | safe}}
+  {{it.humanity.books.humanityblessed.pages.tracks.html | safe}}
+  {{it.humanity.books.humanityendeavored.pages.multipletracks.html | safe}}
+</details>
+<details class="no-print row" id="monstrous-row">
   <summary>
     🧟 Monstrous Endeavors
   </summary>
-  <ul>
-    <li><strong>Violent Attack</strong><br /><em>Hurt only.</em> Use your position roll to violently Attack an opponent. On a Maximum Success, remove them from the Endeavor. On other successes, they move down by the standard amount.</li>
-    <li><strong>Non-violent Attack</strong><br /><em>Not Hurt.</em> Use your position roll to non-violently Attack an opponent. On a success, steal a number of temporary Blessings from them equal to the standard amount.</li>
-    <li><strong>Advance</strong><br /><em>Not Hurt.</em> Use your position roll to perform a Check to advance your team's objectives. On a success, move up by the standard amount.</li>
-    <li><strong>Protect</strong><br /><em>Any Stat.</em> Ignore your position roll and spend Blessings to protect yourself or an ally from the opponents' objectives. For each Blessing spent, their relevant Attacks are one rank more difficult, until your next turn.</li>
-    <li><strong>Pass</strong><br /><em>Any Stat.</em> Skip or delay your action so you can Help another character who has not acted this round or so they can Help you.</li>
-    <li><strong>Unique Skill</strong><br /><em>Any Stat.</em> Spend ⊜⊜ to perform an action unique to your character. Take two other actions combined.</li>
-    <li><strong>Perform Combo</strong><br /><em>Special Action.</em> Move up by your number of temporary Blessings, then spend all your temporary Blessings. Then you and your allies may move down any total amount. If you do, choose opponents to move down by a total of the amount moved this way.</li>
-    <li><strong>Declare Victory</strong><br /><em>Special Action.</em> If you are at position 30 or higher, spend all your temporary Blessings and choose an opponent to remove from the Endeavor.</li>
-  </ul>
+  {{it.humanity.books.humanityblessed.pages.monstrousendeavors.html | safe}}
 </details>
-<details class="row" id="racing-row">
+<details class="no-print row" id="racing-row">
   <summary>
     🏇 Racing Endeavors
   </summary>
-  <ul>
-    <li>Gain a Fatigue each time you spend a Blessing. After actions, before the special action, perform a Check to stay in the race, made harder for each Fatigue.</li>
-    <li><strong>Violent</strong><br /><em>Hurt only.</em> Use your position roll to violently Attack another racer. On a Maximum Success, remove them from the Endeavor. On other successes, they move down by the standard amount.</li>
-    <li><strong>Non-violent</strong><br /><em>Not Hurt.</em> Use your position roll to non-violently Attack another racer. On a success, steal a number of temporary Blessings from them equal to the standard amount.</li>
-    <li><strong>Advance</strong><br /><em>Not Hurt.</em> Use your position roll to perform a Check to advance in the race. On a success, move up by the standard amount.</li>
-    <li><strong>Protect</strong><br /><em>Any Stat.</em> Ignore your position roll and spend Blessings to protect yourself or an ally from the opponents' objectives. For each Blessing spent, their relevant Attacks are one rank more difficult, until your next turn.</li>
-    <li><strong>Pass</strong><br /><em>Any Stat.</em> Skip or delay your action so you can Help another character who has not acted this round or so they can Help you.</li>
-    <li><strong>Unique Skill</strong><br /><em>Any Stat.</em> Spend ⊜⊜ to perform an action unique to your character. Take two other actions combined.</li>
-    <li><strong>Overcome</strong><br /><em>Special Action.</em> Move up by the standard amount, rounded down, ignoring the first Terrain button you would activate during this movement.</li>
-  </ul>
-</details> -->
+  {{it.humanity.books.humanityblessed.pages.racingendeavors.html | safe}}
+</details>
+<details class="no-print row" id="racing-row">
+  <summary>
+    ⏩ Rush Endeavors
+  </summary>
+  {{it.humanity.books.humanityendeavored.pages.rushendeavors.html | safe}}
+</details>
+<details class="no-print row" id="racing-row">
+  <summary>
+    💣 Stealth Endeavors
+  </summary>
+  {{it.humanity.books.humanityendeavored.pages.stealthendeavors.html | safe}}
+</details>
 <div id="dice" class="clear"></div>
 <div id="font-fix">✿</div>

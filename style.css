@@ -87,6 +87,10 @@ td {
   opacity: 0.7;
 }
 
+img.emoji {
+  max-width: .5ch;
+}
+
 .homepage a {
   background: var(--color-darker);
   color: var(--color-lighter);
@@ -160,7 +164,7 @@ td {
     --font-body: "Noto Emoji", "PT Sans" !important;
   }
 
-  #helping-row, #checks-row, #difficulty-row, #attacks-row, #ethics-row, #schools-row {
+  .no-print {
     display: none;
   }
   
