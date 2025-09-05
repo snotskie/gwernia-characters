@@ -91,6 +91,12 @@ img.emoji {
   max-width: .5ch;
 }
 
+th[scope="row"]{
+  writing-mode: sideways-lr;
+  padding: 1ch 0;
+  vertical-align: bottom;
+}
+
 .homepage a {
   background: var(--color-darker);
   color: var(--color-lighter);
