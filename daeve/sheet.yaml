@@ -38,9 +38,9 @@ effects:
     effect: During the day (9am to 7pm), your Blessings are each worth 1 more, to a maximum of 6. However, during the night (9pm to 7am), your Blessings are each worth 1 less, to a minimum of 0.
 aptitudes:
   - name: Fishing [Calm]
-    effect: Once per session, when you are in a safe place, you may perform a Check using Head, Home, or an unconventional Stat balanced with either. Then once before the end of the session, you may use the value of that roll instead of rolling for another non-violent Check.
+    guid: calmspecialization
   - name: Interactions with guards [Shameless]
-    effect: Once per session, when your Blessings have a total combined worth of at least 10, you may perform a joke, dance, or stunt related enough to your Lifestyle. Each other character who witnesses this becomes Uncool.
+    guid: shamelessspecialization
   - name: Small Tools (not only for torture)
 items:
   - name: Sword (bigger) ⭐

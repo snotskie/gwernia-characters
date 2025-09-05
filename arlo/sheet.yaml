@@ -40,9 +40,9 @@ effects:
     effect: Until treated, you cannot spark. Held at bay until 7pm.
 aptitudes:
   - name: Local Gwernian history [Resolved]
-    effect: When an Attack succeeds against you, the Attacker receives one fewer boon and one additional bust than usual, and you gain a Blessing. Recharge: ④.
+    guid: resolvedspecialization
   - name: Alchemy [Mischievous]
-    effect: When another character would succeed a Check, you may distract them using an thing you have gained, such as an item, information, or alliance. If you do, modify that character's result by -3, possibly turning their success into a failure. Recharge: ⑤.
+    guid: mischievousspecialization
 items:
   - name: Sharp Sword ⭐
     effect: While using this item as intended, you may round rolls of 7 up to 8.

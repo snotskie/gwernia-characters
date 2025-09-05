@@ -38,9 +38,9 @@ effects:
     effect: Attacks made against you during the night (9pm to 7am) are one rank harder. However, during the day (9am to 7pm) they are one rank easier.
 aptitudes:
   - name: Mechanical Tinkering [Excessive]
-    effect: Once per session, you may destroy a thing you have gained, such as an item, information, or alliance. Until the end of the scene, you adopt its properties, the properties of a concept associated with it, or push it to its breaking point.
+    guid: excessivespecialization
   - name: Erromoni Druidcraft Theory [Determined]
-    effect: Once per action, you may ignore the negative effects of your injuries and conditions. Recharge: ③.
+    guid: determinedspecialization
 items:
   - name: Cloak of Darkest Night 🌟
     effect: While wearing this cloak and attempting to intimidate someone, impress someone, or conduct clandestine business, you may round rolls of 6 or 7 up to 8.

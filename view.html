@@ -48,6 +48,10 @@
             <br />
             {{apt.effect}}
           {{/if}}
+          {{@if(apt.guid)}}
+            <br>
+            {{it.humanity.options[apt.guid].effect}}
+          {{/if}}
         </li>
       {{/foreach}}
     </ul>
@@ -75,7 +79,8 @@
   <summary>
     🎲 Checks
   </summary>
-  <p>
+  {{it.humanity.books.humanityblessed.pages.checks.html | safe}}
+  <!-- <p>
     Roll 2, 3, or 4: Fail. If Easy or Apt, round 3 or 4 up to 5
   </p>
   <p>
@@ -89,9 +94,9 @@
   </p>
   <p>
     Roll 20+: Maximum Success (exceptional boon).
-  </p>
+  </p> -->
 </details>
-<details class="row" id="difficulty-row">
+<!-- <details class="row" id="difficulty-row">
   <summary>
     🪨 Difficulty
   </summary>
@@ -101,24 +106,26 @@
   <p>
     Harder: Each rank beyond Hard requires an additional roll.
   </p>
-</details>
+</details> -->
 <details class="row" id="helping-row">
   <summary>
     🤝 Helping
   </summary>
-  <p>
+  {{it.humanity.books.humanityblessed.pages.helping.html | safe}}
+  <!-- <p>
     Once per roll you may Help another character by spending ①.
     They add half the value of that Blessing to the roll or to <b>X</b>, rounded down, to a minimum of 1.
     They also gain an additional bust.
     You cannot Help if you are engaged in another action or if it would be unreasonable.
-  </p>
+  </p> -->
 </details>
 <details class="row" id="attacks-row">
   <summary>
     🔄 Attacks
   </summary>
+  {{it.humanity.books.humanityblessed.pages.attacks.html | safe}}
   <p>
-    Only Attacker rolls. If Defender has a relevant Apt, Check is one rank harder.
+    <em>If Defender has a relevant Apt, Check is one rank harder.</em>
   </p>
 </details>
 <details class="row" id="gains-row">
@@ -144,6 +151,9 @@
   <summary>
     📜 Schools
   </summary>
+  <p>
+    <em>Key:</em> 🍄 Reagents. 🔵 Easy effects. 🟢 Normal effects. 🟠 Hard effects. 🟣 Harder effects. ⚫ Hardest effects. ⚪ Quest-level effects.
+  </p>
   <ul>
     <li>
       <strong>Elemental</strong><br />
@@ -217,9 +227,6 @@
     </li>
   </ul>
   <p>
-    <em>Key:</em> 🍄 Reagents. 🔵 Easy effects. 🟢 Normal effects. 🟠 Hard effects. 🟣 Harder effects. ⚫ Hardest effects. ⚪ Quest-level effects.
-  </p>
-  <p>
     Increase the difficulty if you are pushing the area, duration, or nature of the effect further than normal; if the effect requires a material cost you cannot pay; if you are untrained in the effect or it is outside your school of training; if the effect requires forbidden knowledge; or if the environment is not conducive to such effects.
   </p>
   <p>
@@ -256,35 +263,5 @@
     <li><strong>Overcome</strong><br /><em>Special Action.</em> Move up by the standard amount, rounded down, ignoring the first Terrain button you would activate during this movement.</li>
   </ul>
 </details> -->
-<!-- <div class="row">
-  <h1>
-    Monstrous Endeavors
-  </h1>
-  <p>
-    Your goal is to move your opponents to 0 or yourself to 30. Their goal is to give you 3 wounds in a row or themselves 10 schemes in a row.
-  </p>
-  <p>
-    At the start of each round, choose any Stat to roll as you get in position for what you want to do. Gain temporary Blessings equal to half this roll rounded down. Turn order follows the number of temporary Blessings, lowest to highest. You lose unspent temporary Blessings when the Endeavor ends.
-  </p>
-  <p>
-    Choose one action during your turn:
-  </p>
-  <ul>
-    <li><strong>🗡️ Violent Attack</strong><br><i>Hurt only.</i> Use your position roll to violently Attack an opponent. On a Maximum Success, remove them from the Endeavor. On other successes, they move down by half your position roll, rounded down. <i>Violence is most effective as a finishing blow or a group effort.</i></li>
-    <li><strong>🧩 Non-violent Attack</strong><br><i>Not Hurt.</i> Use your position roll to non-violently Attack an opponent. On a success, steal a number of temporary Blessings from them equal to half your position roll, rounded down.</li>
-    <li><strong>🚩 Advance</strong><br><i>Not Hurt.</i> Use your position roll to advance your team's objectives. Move up by half your position roll, rounded down.</li>
-    <li><strong>🛡️ Protect</strong><br><i>Any Stat.</i> Ignore your position roll and spend Blessings to protect yourself or an ally from the opponents' objectives. For each Blessing spent, their relevant Checks are one rank more difficult, until your next turn.</li>
-    <li><strong>↪️ Pass</strong><br><i>Any Stat.</i> Skip or delay your action so you can Help another character who has not acted this round or so they can Help you.</li>
-    <li><strong>🌀 Unique Skill</strong><br><i>Any Stat.</i> Spend ⊜⊜ to perform an action unique to your character. Take two other actions combined.</li>
-  </ul>
-  <p>You may also spend Blessings during your turn before you act to Spark your position roll, but this will not give you more temporary Blessings.</p>
-  <p>
-    If you end the round with the most temporary Blessings, choose one special action:
-  </p>
-  <ul>
-    <li><strong>✨ Perform a Combo</strong><br>Move up by your number of temporary Blessings, then spend all your temporary Blessings. You and your allies may move down any total amount, then choose opponents to move down by that same total amount.</li>
-    <li><strong>👑 Declare Victory</strong><br>If you are at position 30 or higher, spend all your temporary Blessings, then choose an opponent to declare victory over and remove from the Endeavor.</li>
-  </ul>
-</div> -->
 <div id="dice" class="clear"></div>
 <div id="font-fix">✿</div>

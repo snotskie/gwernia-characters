@@ -38,9 +38,9 @@ effects:
     effect: During the night (9pm to 7am), your Blessings are each worth 1 more, to a maximum of 6. However, during the day (9am to 7pm), your Blessings are each worth 1 less, to a minimum of 0.
 aptitudes:
   - name: Interactions with Merchants [Mischievous]
-    effect: When another character would succeed a Check, you may distract them using an thing you have gained, such as an item, information, or alliance. If you do, modify that character's result by -3, possibly turning their success into a failure. Recharge: ⑤.
+    guid: mischievousspecialization
   - name: Maritime Trade Laws and Deals [Favored]
-    effect: When you succeed a Check related enough to this Aptitude, gain an additional boon, within reason.
+    guid: favoredspecialization
   - name: Showboating
 items:
   - name: Pickpocketed Odds and Ends

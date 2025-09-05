@@ -38,10 +38,12 @@ effects:
     effect: Attacks made against you during the night (9pm to 7am) are one rank harder. However, during the day (9am to 7pm) they are one rank easier.
 aptitudes:
   - name: Camping [Sure-footed]
-    effect: During Endeavors, when you take the Protect action to protect yourself, you may use your position roll to perform a Check to protect yourself further. On a success, the Protect effect lasts an additional number of rounds equal to the standard amount.
+    guid: surefootedspecialization
   - name: Unfriendly Interactions with Undead [Attentive]
-    effect: When you succeed a Check using Hand, Heart, or an unconventional Stat balanced with either, for your subsequent action you may perform a violent Attack using that same Stat. Recharge: ③.
+    guid: attentivespecialization
   - name: Cool under pressure
+  - name: How to use these abilities in combat
+    effect: First use Home to Protect yourself (hide somewhere). Then for three rounds you are protected [Sure-footed] and for two rounds you can attack violently (or non-violently as usual) [Attentive] using Hand, Heart, or anything tied with those. So while you're protected, attack with Hand or Head [tied with Hand]. Once Home, Hand, and Head are all spent, take a round to rest and recharge them.
 items:
   - name: Bow ⭐
     effect: While using this item as intended, you may round rolls of 7 up to 8.

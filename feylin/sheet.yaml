@@ -42,9 +42,9 @@ effects:
     effect: The otherwise invisible darklings of the world are visible to you. Duration: until 7pm.
 aptitudes:
   - name: Fashion [Resolved]
-    effect: When an Attack succeeds against you, the Attacker receives one fewer boon and one additional bust than usual, and you gain a Blessing. Recharge: ④.
+    guid: resolvedspecialization
   - name: Troubador [Rousing]
-    effect: Once per session, when your Blessings have a total combined worth of at least 10, you may share a speech, story, or information related enough to your Ethic. Each other character who hears this gains a Blessing.
+    guid: rousingspecialization
   - name: Blacksmithing
 items:
   - name: Fine Travel Tea Set ⭐
@@ -53,7 +53,7 @@ items:
     effect: While using this item as intended, you may round rolls of 6 or 7 up to 8. However, once you round three rolls this way, this item loses this effect until it has been retuned.
   - name: Dagger
   - name: Scroll of Frozen Doom ⿻
-    effect: The scroll's creator makes a violent Delayed Attack against the target when this item is used and again on each of the target's turns. The standard amount for these Attacks is 5, and buttons that would prevent movement from these Attacks are instead removed from the Endeavor. Once the target successfully Defends against one of these Attacks, this effect ends. Until then, the target can take no actions, as they are frozen to their soul, witnessing their own demise. A target with the Horde tag or a relevant Immunity tag automatically succeeds these Checks. Once used, this scroll dissolves into cold ash.
+    effect: The target makes a Hex Check to defend against this scroll when this scroll is used  and again on each of the target's turns. The difficulty for this Check is two tiers past Hard. On a failure, the target moves down by 3 and buttons that would prevent this movement are instead removed from the Endeavor. Once the target succeeds one of these Checks, this effect ends. Until then, the target can take no actions, as they are frozen to their soul, witnessing their own demise. A target with the Horde tag or a relevant Immunity tag automatically succeeds these Checks. Once used, this scroll dissolves into cold ash.
   - name: Elemental Scrolls 🌟⿻
     effect: While consulting these scrolls and attempting to perform simple Elemental magic, you may round rolls of 6 or 7 up to 8. However, once you round three rolls this way, the last of these scrolls dissolves into a fragrant breeze.
   - name: Acclimation Cloak ❇⿻
