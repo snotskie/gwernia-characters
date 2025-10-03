@@ -35,7 +35,7 @@ name: 🜁 So
 subname: Wisened, Vice and Virtue, Jundar. Loyal ranger, attached to Feylin.
 effects:
   - name: 💠 Moonblessed
-    effect: Attacks made against you during the night (9pm to 7am) are one rank harder. However, during the day (9am to 7pm) they are one rank easier.
+    effect: When you bump when gaining a Blessing during the night (9pm to 7am), gain an additional Blessing. However, you cannot bump when gaining a Blessing during the day (9am to 7pm).
 aptitudes:
   - name: Camping [Sure-footed]
     guid: surefootedspecialization

@@ -35,7 +35,7 @@ name: ⚝ Feylin Silvermoore
 subname: Chosen, Vice and Virtue, Jundar. Bard.
 effects:
   - name: 🏵 Sunblessed
-    effect: Attacks made against you during the day (9am to 7pm) are one rank harder. However, during the night (9pm to 7am) they are one rank easier.
+    effect: When you bump when gaining a Blessing during the day (9am to 7pm), gain an additional Blessing. However, you cannot bump when gaining a Blessing during the night (9pm to 7am).
   - name: ✨ Chosen
     effect: When you perform Sparks using Heart or Hex, you may round rolls of 6 or 7 up to 8, as though you were aided by the will of the people whose lives you've touched.
   - name: 🃏 Darkling Sense
