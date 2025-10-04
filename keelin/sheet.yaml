@@ -1,7 +1,7 @@
 stats:
   - emoji: 🧠
     name: Head
-    value: d4
+    value: d6
     x: 1
   - emoji: ✌️
     name: Hand
@@ -9,7 +9,7 @@ stats:
     x: 2
   - emoji: 💕
     name: Heart
-    value: d8
+    value: d10
     x: 2
   - emoji: ☕️
     name: Home
@@ -53,3 +53,5 @@ items:
     effect: While wearing this cloak and attempting to move or perform an action unseen, you may round a roll of 3 or 4 up to 5 and you may roll for such actions using Hex instead of Hand as usual. However, once you round two rolls this way, this item loses this effect until recharged by moonlight.
   - name: Green Claymore ⭐
     effect: While Attacking with this weapon, you may round rolls of 7 up to 8 and you may roll for such actions using Hex instead of Hurt as usual. If you succeed with a boon, you may also leave the opponent poisoned.
+  - name: Secret Handshake 🌟
+    effect: While performing this handshake and attempting to pickpicket someone, impress someone, or conduct clandestine business, you may round rolls of 6 or 7 up to 8.
