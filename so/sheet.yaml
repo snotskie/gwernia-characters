@@ -10,7 +10,7 @@ stats:
   - emoji: 💕
     name: Heart
     value: d6
-    x: 1
+    x: 2
   - emoji: ☕️
     name: Home
     value: d8
