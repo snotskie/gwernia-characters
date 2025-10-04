@@ -9,8 +9,8 @@ stats:
     x: 2
   - emoji: 💕
     name: Heart
-    value: d8
-    x: 2
+    value: d10
+    x: 3
   - emoji: ☕️
     name: Home
     value: d2
@@ -49,8 +49,8 @@ aptitudes:
 items:
   - name: Fine Travel Tea Set ⭐
     effect: While using this item as intended, you may round rolls of 7 up to 8.
-  - name: Finely Tuned Lute 🌟⿻
-    effect: While using this item as intended, you may round rolls of 6 or 7 up to 8. However, once you round three rolls this way, this item loses this effect until it has been retuned.
+  - name: Signature Lute 🌟
+    effect: While using this item as intended, you may round rolls of 6 or 7 up to 8.
   - name: Dagger
   - name: Scroll of Frozen Doom ⿻
     effect: The target makes a Hex Check to defend against this scroll when this scroll is used  and again on each of the target's turns. The difficulty for this Check is two tiers past Hard. On a failure, the target moves down by 3 and buttons that would prevent this movement are instead removed from the Endeavor. Once the target succeeds one of these Checks, this effect ends. Until then, the target can take no actions, as they are frozen to their soul, witnessing their own demise. A target with the Horde tag or a relevant Immunity tag automatically succeeds these Checks. Once used, this scroll dissolves into cold ash.
