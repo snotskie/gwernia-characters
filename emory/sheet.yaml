@@ -5,8 +5,8 @@ stats:
     x: 2
   - emoji: ✌️
     name: Hand
-    value: d8
-    x: 2
+    value: d10
+    x: 3
   - emoji: 💕
     name: Heart
     value: d4
@@ -25,7 +25,7 @@ stats:
     x: 1
   - emoji: ⏳
     name: History
-    value: d6
+    value: d8
     x: 2
   - emoji: 🪶
     name: Hex
@@ -41,10 +41,11 @@ aptitudes:
     guid: favoredspecialization
   - name: Note-taking/Recollection [Analytical]
     guid: analyticalspecialization
-  - name: Mirari theory
+  - name: Mirari theory [Friendly]
+    guid: friendlyspecialization
 items:
-  - name: Fine Field Journal ⭐
-    effect: While using this item as intended, you may round rolls of 7 up to 8.
+  - name: Alchemist's Journal 🌟
+    effect: While using this item as intended, you may round rolls of 6 or 7 up to 8.
   - name: Sample Collection Pouch
   - name: Small Knife
   - name: Sensible Knife
