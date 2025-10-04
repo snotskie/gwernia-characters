@@ -9,7 +9,7 @@ stats:
     x: 2
   - emoji: 💕
     name: Heart
-    value: d4
+    value: d6
     x: 1
   - emoji: ☕️
     name: Home
@@ -49,4 +49,5 @@ items:
     effect: While using this item as intended, you may round rolls of 7 up to 8.
   - name: Traveling Bag ⭐
     effect: While using this item as intended, you may round rolls of 7 up to 8.
+  - name: Soison Sauce
   
