@@ -25,17 +25,19 @@ stats:
     x: 2
   - emoji: ⏳
     name: History
-    value: d8
-    x: 2
+    value: d10
+    x: 3
   - emoji: 🪶
     name: Hex
     value: d2
     x: 1
 name: 🐡 Daeve
-subname: Eager, Vice and Virtue, Human. Is in the military uses big sword loves fishing. Suspicious of mud.
+subname: Driven, Vice and Virtue, Human. Is in the military uses big sword loves fishing. Suspicious of mud.
 effects:
   - name: ☀️ Sunblessed
     effect: During the day (9am to 7pm), your Blessings are each worth 1 more, to a maximum of 6. However, during the night (9pm to 7am), your Blessings are each worth 1 less, to a minimum of 0.
+  - name: ⚜️ Driven
+    effect: When you perform Sparks using Hand or Hurt, you may round rolls of 6 or 7 up to 8, as though you were aided by your own faith in your mission.
 aptitudes:
   - name: Fishing [Calm]
     guid: calmspecialization
