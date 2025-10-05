@@ -1,9 +1,9 @@
 addEventListener("load", () => {
   document.fonts.ready.then((fontFaces) => {
-    fetch("https://snotskie.com/ttrpg/export.json").then((response) => response.json()).then((humanity) => {
+    fetch(`https://snotskie.com/ttrpg/export.json?t=${(new Date).getTime()}`).then((response) => response.json()).then((humanity) => {
       console.log(humanity);
-      fetch("/gwernia-characters/view.html").then((response) => response.text()).then((view) => {
-        fetch(`${location.pathname}/sheet.yaml`).then((response) => response.text()).then((sheet) => {
+      fetch(`/gwernia-characters/view.html?t=${(new Date).getTime()}`).then((response) => response.text()).then((view) => {
+        fetch(`${location.pathname}/sheet.yaml?t=${(new Date).getTime()}`).then((response) => response.text()).then((sheet) => {
           const it = YAML.parse(sheet);
           it.humanity = humanity;
           window.it = it;
