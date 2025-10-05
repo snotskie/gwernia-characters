@@ -25,8 +25,8 @@ stats:
     x: 2
   - emoji: ⏳
     name: History
-    value: d8
-    x: 2
+    value: d10
+    x: 3
   - emoji: 🪶
     name: Hex
     value: d2
@@ -44,6 +44,8 @@ aptitudes:
 items:
   - name: Cloak of Darkest Night 🌟
     effect: While wearing this cloak and attempting to intimidate someone, impress someone, or conduct clandestine business, you may round rolls of 6 or 7 up to 8.
+  - name: Erromoni Rusted Raven 🌟
+    effect: While recalling information about the Rusted Ravens or calling on a favor from your sect, you may round rolls of 6 or 7 up to 8.
   - name: Improved Crossbow ⭐
     effect: While using this item as intended, you may round rolls of 7 up to 8.
   - name: 𝟤x Bars High-Quality Metals (crafting reagents)
