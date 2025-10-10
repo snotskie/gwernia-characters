@@ -40,7 +40,6 @@
     <h1>
       🔰 Apts &amp; Specs
     </h1>
-    <p><strong>Unique:</strong></p>
     <ul>
       {{@foreach(it.aptitudes) => i, apt}}
         <li>
@@ -53,23 +52,6 @@
             <br>
             {{it.humanity.options[apt.guid].effect}}
           {{/if}}
-        </li>
-      {{/foreach}}
-    </ul>
-    <p><strong>Evergreen:</strong></p>
-    <ul>
-      {{! it.evergreen = [
-        "ambitiousspecialization",
-        "creativespecialization",
-        "exchangeablespecialization",
-        "legendaryspecialization",
-        "supportivespecialization"
-      ]}}
-      {{@foreach(it.evergreen) => i, guid}}
-        <li>
-          <strong>{{it.humanity.options[guid].name}}</strong>
-          <br>
-          {{it.humanity.options[guid].effect}}
         </li>
       {{/foreach}}
     </ul>
@@ -93,6 +75,27 @@
     </ul>
   </div>
 {{/if}}
+<details class="no-print row" id="evergreen-row">
+  <summary>
+    🌲 Evergreens
+  </summary>
+  <ul>
+    {{! it.evergreen = [
+      "ambitiousspecialization",
+      "creativespecialization",
+      "exchangeablespecialization",
+      "legendaryspecialization",
+      "supportivespecialization"
+    ]}}
+    {{@foreach(it.evergreen) => i, guid}}
+      <li>
+        <strong>{{it.humanity.options[guid].name}}</strong>
+        <br>
+        {{it.humanity.options[guid].effect}}
+      </li>
+    {{/foreach}}
+  </ul>
+</details>
 <details class="no-print row" id="checks-row">
   <summary>
     🎲 Checks
