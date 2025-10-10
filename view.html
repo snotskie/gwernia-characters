@@ -89,8 +89,7 @@
     ]}}
     {{@foreach(it.evergreen) => i, guid}}
       <li>
-        <strong>{{it.humanity.options[guid].name}}</strong>
-        <br>
+        <strong>{{it.humanity.options[guid].name.replace(" Specialization", "")}}:</strong>
         {{it.humanity.options[guid].effect}}
       </li>
     {{/foreach}}
