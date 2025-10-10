@@ -39,8 +39,8 @@ effects:
 aptitudes:
   - name: Interactions with Merchants [Mischievous]
     guid: mischievousspecialization
-  - name: Maritime Trade Laws and Deals [Favored]
-    guid: favoredspecialization
+  - name: Maritime Trade Laws and Deals [Skilled]
+    guid: skilledspecialization
   - name: Showboating
 items:
   - name: Pickpocketed Odds and Ends
