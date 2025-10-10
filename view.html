@@ -50,7 +50,7 @@
           {{/if}}
           {{@if(apt.guid)}}
             <br>
-            {{it.humanity.options[apt.guid].effect}}
+            {{it.humanity.options[apt.guid].effect.replace("Effect: ", "")}}
           {{/if}}
         </li>
       {{/foreach}}
@@ -90,7 +90,7 @@
     {{@foreach(it.evergreen) => i, guid}}
       <li>
         <strong>{{it.humanity.options[guid].name.replace(" Specialization", "")}}:</strong>
-        {{it.humanity.options[guid].effect}}
+        {{it.humanity.options[guid].effect.replace("Effect: ", "")}}
       </li>
     {{/foreach}}
   </ul>
