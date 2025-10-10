@@ -37,8 +37,8 @@ effects:
   - name: 💠 Moonblessed
     effect: When you bump when gaining a Blessing during the night (9pm to 7am), gain an additional Blessing. However, you cannot bump when gaining a Blessing during the day (9am to 7pm).
 aptitudes:
-  - name: Potion Making [Favored]
-    guid: favoredspecialization
+  - name: Potion Making [Skilled]
+    guid: skilledspecialization
   - name: Note-taking/Recollection [Analytical]
     guid: analyticalspecialization
   - name: Mirari theory [Friendly]
